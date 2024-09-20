@@ -1,6 +1,6 @@
 use floem::peniko::Color;
 use palette::{
-    color_difference::Wcag21RelativeContrast, Darken, FromColor, Hsl, Lch, Lighten, Srgb,
+    color_difference::Wcag21RelativeContrast, Darken, FromColor, Hsl, Lighten, Srgb,
 };
 
 use crate::{
@@ -352,29 +352,7 @@ fn is_dark(c: &Color) -> bool {
 }
 
 
-fn interpolate_color(start_color: Lch, end_color: Lch, t: f32) -> Srgb {
-    
-    let start_l = start_color.l;
-    let start_c = start_color.chroma;
-    let start_h = start_color.hue.into_radians();
 
-    let end_l = end_color.l;
-    let end_c = end_color.chroma;
-    let end_h = end_color.hue.into_radians();
-
-    
-    let interpolated_l = (start_l + (end_l - start_l) * t).min(0.).max(100.);
-    let interpolated_c = (start_c + (end_c - start_c) * t).min(0.).max(100.);
-    let interpolated_h = (start_h + (end_h - start_h) * t).min(0.).max(360.);
-
-    
-    
-    
-
-    
-    let interpolated_color = Lch::new(interpolated_l, interpolated_c, interpolated_h);
-    Srgb::from_color(interpolated_color)
-}
 
 
 
