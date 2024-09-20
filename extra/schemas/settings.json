@@ -1,0 +1,90 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$ref": "#/definitions/Settings",
+    "definitions": {
+        "Settings": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "core": {
+                    "$ref": "#/definitions/Core"
+                },
+                "ui": {
+                    "$ref": "#/definitions/UI"
+                },
+                "icon-theme": {
+                    "$schema": "file://./icon-theme.json"
+                }
+            },
+            "required": [],
+            "title": "Settings"
+        },
+        "Core": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "default-workspace": {
+                    "type": "string"
+                },
+                "color-theme": {
+                    "type": "string"
+                },
+                "icon-theme": {
+                    "type": "string"
+                },
+                "custom-titlebar": {
+                    "type": "boolean"
+                }
+            },
+            "required": [],
+            "title": "Core"
+        },
+        "UI": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "scale" : {
+                    "type": "number"
+                },
+                "font-family": {
+                    "type": "string"
+                },
+                "font-size": {
+                    "type": "integer"
+                },
+                "icon-size": {
+                    "type": "integer"
+                },
+                "header-height": {
+                    "type": "integer"
+                },
+                "status-height": {
+                    "type": "integer"
+                },
+                "tab-min-width": {
+                    "type": "integer"
+                },
+                "scroll-width": {
+                    "type": "integer"
+                },
+                "drop-shadow-width": {
+                    "type": "integer"
+                },
+                "palette-width": {
+                    "type": "integer"
+                },
+                "hover-font-family": {
+                    "type": "string"
+                },
+                "hover-font-size": {
+                    "type": "integer"
+                },
+                "trim-search-results-whitespace": {
+                    "type": "boolean"
+                }
+            },
+            "required": [],
+            "title": "UI"
+        }
+    }
+}

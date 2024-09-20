@@ -1,0 +1,90 @@
+#:schema ../extra/schemas/color-theme.json
+
+[color-theme]
+name = "xwork Dark"
+
+[ui]
+font-family = ""
+font-size = 13
+header-height = 48
+status-height = 25
+tab-min-width = 100
+activity-width = 50
+scroll-width = 10
+drop-shadow-width = 0
+
+[color-theme.base]
+black = "#282C34"
+blue = "#61AFEF"
+cyan = "#56B6C2"
+green = "#98C379"
+grey = "#3E4451"
+magenta = "#C678DD"
+orange = "#D19A66"
+purple = "#C678DD"
+red = "#E06C75"
+white = "#ABB2BF"
+yellow = "#E5C07B"
+
+primary-background = "#242936"
+# Background for 'secondary' elements: panels, palette, status bar, completion, hover
+secondary-background = "#1C212B"
+current-background = "#2C313A"
+text = "$white"
+dim-text = "#5C6370"
+
+[color-theme.ui]
+"xwork.error" = "$red"
+"xwork.warn" = "$yellow"
+"xwork.dropdown_shadow" = "#000000"
+"xwork.border" = "#000000"
+"xwork.scroll_bar" = "#3E4451BB"
+
+"xwork.button.primary.background" = "#50a14f"
+"xwork.button.primary.foreground" = "$black"
+
+# tab
+"xwork.tab.active.background" = "$primary-background"
+"xwork.tab.active.foreground" = "$text"
+"xwork.tab.active.underline" = "#528BFF"
+
+"xwork.tab.inactive.background" = "$secondary-background"
+"xwork.tab.inactive.foreground" = "$text"
+"xwork.tab.inactive.underline" = "#528BFF77"
+
+"xwork.tab.separator" = ""
+
+"xwork.icon.active" = "$text"
+"xwork.icon.inactive" = "$dim-text"
+
+"xwork.logo.icon" = "$white"
+"xwork.workspace.type.icon" = "#4078F2"
+
+
+
+"worksapce.background" = "$primary-background"
+"worksapce.foreground" = "$text"
+"worksapce.editor.caret" = "#528BFF"
+"hover.background" = "$secondary-background"
+
+"activity.background" = "$secondary-background"
+"activity.current" = "$primary-background"
+
+"tooltip.background" = "$primary-background"
+"tooltip.foreground" = "$text"
+
+"panel.background" = "$secondary-background"
+"panel.foreground" = "$text"
+"panel.foreground.dim" = "$dim-text"
+"panel.current.background" = "$current-background"
+"panel.current.foreground" = "$text"
+"panel.current.foreground.dim" = "$dim-text"
+"panel.hovered.background" = "#343A45"
+"panel.hovered.active.background" = "$dim-text"
+"panel.hovered.foreground" = "$text"
+"panel.hovered.foreground.dim" = "$dim-text"
+
+"status.background" = "$secondary-background"
+"status.foreground" = "$text"
+
+

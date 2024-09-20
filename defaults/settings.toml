@@ -1,0 +1,34 @@
+#:schema ../extra/schemas/settings.json
+
+[core]
+default-workspace = "XWMail"
+color-theme = "xwork Dark"
+icon-theme = "XWork Codicons"
+custom-titlebar = true
+
+# 可以添加不同的配置，这个地方： 
+
+# [terminal.profiles.example]
+# command     = "cargo"
+# arguments   = ["run"]
+# environemnt = { "KEY" = "VALUE" }
+# workdir     = "/home/user"
+
+[ui]
+scale = +1.0
+font-family = ""
+font-size = 13
+icon-size = 16
+header-height = 48
+status-height = 25
+tab-min-width = 100
+tab-separator-height = "Content"
+scroll-width = 10
+drop-shadow-width = 0
+palette-width = 500
+hover-font-family = ""
+hover-font-size = 0
+trim-search-results-whitespace = true
+list-line-height = 25
+tab-close-button = "Right"
+open-editors-visible = true

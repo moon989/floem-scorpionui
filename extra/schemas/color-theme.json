@@ -1,0 +1,80 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$ref": "#/definitions/ColorTheme",
+    "definitions": {
+        "ColorTheme": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "color-theme": {
+                    "$ref": "#/definitions/ColorThemeClass"
+                },
+                "ui": {
+                    "$ref": "#/definitions/UI"
+                }
+            },
+            "required": [],
+            "title": "ColorTheme"
+        },
+        "ColorThemeClass": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "name": {
+                    "type": "string"
+                },
+                "base": {
+                    "$ref": "#/definitions/Base"
+                },
+                "ui": {
+                    "type": "object",
+                    "additionalProperties": {
+                        "type": "string"
+                    }
+                }
+            },
+            "required": [],
+            "title": "ColorThemeClass"
+        },
+        "Base": {
+            "type": "object",
+            "additionalProperties": {
+                "type": "string"
+            },
+            "required": [],
+            "title": "Base"
+        },
+        "UI": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "font-family": {
+                    "type": "string"
+                },
+                "font-size": {
+                    "type": "integer"
+                },
+                "header-height": {
+                    "type": "integer"
+                },
+                "status-height": {
+                    "type": "integer"
+                },
+                "tab-min-width": {
+                    "type": "integer"
+                },
+                "activity-width": {
+                    "type": "integer"
+                },
+                "scroll-width": {
+                    "type": "integer"
+                },
+                "drop-shadow-width": {
+                    "type": "integer"
+                }
+            },
+            "required": [],
+            "title": "UI"
+        }
+    }
+}

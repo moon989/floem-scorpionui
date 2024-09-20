@@ -1,0 +1,91 @@
+default = "Light Theme"
+
+[[theme]]
+name = "Light Theme"
+disabledopacity = 0.8 # opacity-[0.3]
+# px
+dividerweight = 1
+
+[theme.fontsize]
+# px
+tiny = 12
+small = 14
+medium = 16
+large = 20
+ 
+[theme.radius]
+# 2 px 
+small = 8
+medium = 12
+large = 14
+
+[theme.borderwidth]
+# px
+small = 1
+medium = 2
+large = 3
+
+
+[theme.color]
+background = "#345da7"
+default = "#241414"
+neutral = "#3b8ac4"
+primary = "#09ecf3"
+secondary = "#966fb3"
+accent = "#ffe999"
+ghost = "#C18401"
+link = "#C18401"
+
+info = "#2563eb"
+success = "#16a34a"
+warning = "#d97706"
+error = "#ff0000"
+
+# ==================================
+[[theme]]
+name = "Dark Theme"
+disabledopacity = 0.3 # opacity-[0.3]
+# px
+dividerweight = 1
+
+[theme.fontsize]
+# px
+tiny = 12
+small = 14
+medium = 16
+large = 20
+ 
+[theme.radius]
+# 2 px 
+small = 8
+medium = 12
+large = 14
+
+[theme.borderwidth]
+# px
+small = 1
+medium = 2
+large = 3
+
+[theme.color]
+background = "#1d232a"
+foreground = "#11181C"
+divider = ""
+focus =""
+overlay =""
+
+
+default = "#1F1e24"
+defaultcontent = ""
+
+neutral = "#1a1a1a"
+primary = "#45AEEE"
+secondary = "#E8488A"
+accent = "#FFF232"
+ghost = "#C18401"
+link = "#C18401"
+
+info = "#4AA8C0"
+success = "#823290"
+warning = "#EE8133"
+error = "#E93F33"

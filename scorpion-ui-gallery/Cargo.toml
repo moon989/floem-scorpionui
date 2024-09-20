@@ -1,0 +1,18 @@
+[package]
+name = "scorpion-ui-gallery"
+version      = { workspace = true }
+authors      = { workspace = true }
+edition      = { workspace = true }
+license      = { workspace = true }
+rust-version = { workspace = true }
+keywords.workspace = true
+
+
+[[bin]]
+name = "changetheme"
+path = "src/bin/changetheme.rs"
+
+[dependencies]
+floem = {workspace=true}
+scorpion-ui = {path = "../scorpion-ui"}
+im    = {workspace=true}

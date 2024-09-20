@@ -1,0 +1,94 @@
+[package]
+name         = "scoropionui"
+version      = { workspace = true }
+authors      = { workspace = true }
+edition      = { workspace = true }
+license      = { workspace = true }
+rust-version = { workspace = true }
+
+default-run  = "ThemeBuilder"
+
+[[bin]]
+name = "ThemeBuilder"
+path = "src/bin/theme_builder.rs"
+
+
+
+[workspace]
+members = ["scorpion-ui","scorpion-ui-gallery","scorpion-ui-theme"]
+exclude = ["examples/*"]
+
+[workspace.package]
+version      = "0.0.1"
+edition      = "2021"
+rust-version = "1.75"
+license      = "Apache-2.0"
+authors      = ["Qiang Zheng <2175318066@qq.com>"]
+keywords = ["floem", "gui", "floemui", "components", "widgets"]
+
+[workspace.dependencies]
+
+anyhow            = { version = "1.0" }
+crossbeam-channel = { version = "0.5.12" }
+directories       = { version = "5.0.1" }
+
+indexmap          = { version = "2.2", features = ["serde"] }
+im                = { version = "15.1.0" }
+include_dir       = { version = "0.7" }
+interprocess      = { version = "2.2" }
+
+notify            = { version = "6.1", features = ["serde"] }
+once_cell         = { version = "1.19" }
+palette           = { version = "0.7.6" } 
+parking_lot       = { version = "0.12.3" }
+
+serde             = { version = "1.0" }
+serde_json        = { version = "1.0" }
+strum             = { version = "0.26.2" }
+strum_macros      = { version = "0.26.2" }
+thiserror         = { version = "1.0" }
+toml              = { version = "*" }
+toml_edit         = { version = "0.22.14", features = ["serde"] }
+uuid              = { version = "1.9.1" ,features = [ "v4"] }
+
+[workspace.dependencies.floem]
+git              = "https://github.com/lapce/floem"
+rev              = "157631a49d6ba13a3467dcb994eb46a98c52eb76"
+default-features = true
+features         = ["editor", "serde", "default-image-formats", "rfd-async-std"]
+
+
+[workspace.dependencies.tracing]
+git     = "https://github.com/tokio-rs/tracing"
+rev     = "908cc432a5994f6e17c8f36e13c217dc40085704"
+package = "tracing"
+
+[workspace.dependencies.tracing-log]
+git     = "https://github.com/tokio-rs/tracing"
+rev     = "908cc432a5994f6e17c8f36e13c217dc40085704"
+package = "tracing-log"
+
+[workspace.dependencies.tracing-subscriber]
+git     = "https://github.com/tokio-rs/tracing"
+rev     = "908cc432a5994f6e17c8f36e13c217dc40085704"
+package = "tracing-subscriber"
+
+[workspace.dependencies.tracing-appender]
+git     = "https://github.com/tokio-rs/tracing"
+rev     = "908cc432a5994f6e17c8f36e13c217dc40085704"
+package = "tracing-appender"
+
+[workspace.dependencies.windows-sys]
+version  = "0"
+features = ["Win32_Foundation"]
+
+[dependencies]
+floem ={ workspace = true }
+scorpion-ui = {path = "./scorpion-ui"}
+
+
+[profile.fastdev.package."*"]
+opt-level = 3
+
+[profile.fastdev]
+inherits = "dev"

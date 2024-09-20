@@ -1,0 +1,18 @@
+[package]
+name = "scorpion-ui"
+version      = { workspace = true }
+authors      = { workspace = true }
+edition      = { workspace = true }
+license      = { workspace = true }
+rust-version = { workspace = true }
+
+keywords.workspace = true
+
+# [[bin]]
+# name = "foxyui"
+# path = "src/bin/foxyui.rs"
+
+[dependencies]
+floem ={ workspace = true }
+scorpion-ui-theme = {path = "../scorpion-ui-theme"}
+im    = {workspace=true}

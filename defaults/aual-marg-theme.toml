@@ -1,0 +1,67 @@
+[color-theme]
+name = "Ayu Mirage"
+
+[color-theme.base]
+white = "#ABB2BF"
+black = "#282C34"
+grey = "#3E4451"
+blue = "#61AFEF"
+red = "#E06C75"
+yellow = "#E5C07B"
+orange = "#D19A66"
+green = "#98C379"
+purple = "#C678DD"
+cyan = "#56B6C2"
+magenta = "#C678DD"
+
+[color-theme.ui]
+"activity.background" = "#21252B"
+"activity.current" = "$black"
+
+"editor.background" = "#242936"
+"editor.caret" = "#528bFF"
+"editor.current_line" = "#1A1F29"
+"editor.dim" = "#5C6370"
+"editor.drag_drop_background" = "#79c1fc55"
+"editor.drag_drop_tab_background" = "#0b0e1455"
+"editor.focus" = "#CCCCCC"
+"editor.foreground" = "#CCCAC2"
+"editor.indent_guide" = "$grey"
+"editor.link" = "$blue"
+"editor.selection" = "#409FFF40"
+"editor.visible_whitespace" = "#5C6370"
+
+"hover.background" = "#21252B"
+
+"xwork.border" = "#171B24"
+"xwork.button.primary.background" = "#7FD962"
+"xwork.button.primary.foreground" = "$black"
+"xwork.dropdown_shadow" = "#12151CB3"
+"xwork.error" = "#FF6666"
+"xwork.icon.active" = "#FFCC66"
+"xwork.icon.inactive" = "#69758C1F"
+
+"xwork.scroll_bar" = "#12151CB3"
+
+"xwork.tab.active.background" = "#63759926"
+"xwork.tab.active.foreground" = "$white"
+"xworkce.tab.active.underline" = "#409FFF40"
+"xwork.tab.inactive.background" = "#1F2430"
+"xwork.tab.inactive.foreground" = "$white"
+"xwork.tab.inactive.underline" = "#409FFF21"
+"xwork.tab.separator" = "#000000"
+
+"xwork.warn" = "$yellow"
+
+
+"panel.background" = "#1C212B"
+"panel.current" = "#409FFF40"
+"panel.foreground" = "#707A8C"
+"panel.hovered" = "#409FFF21"
+
+"status.background" = "#1F2430"
+"status.foreground" = "$white"
+
+
+
+
